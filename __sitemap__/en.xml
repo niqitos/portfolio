@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://niqitos.nuxt.space/en</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://niqitos.nuxt.space/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://niqitos.nuxt.space/en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://niqitos.nuxt.space/" />
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/_/profile.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-1.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-2.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-3.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-4.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-5.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-6.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-7.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-8.avif</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/s_234x234/hero/random-9.avif</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://niqitos.nuxt.space/en/about</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://niqitos.nuxt.space/about" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://niqitos.nuxt.space/en/about" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://niqitos.nuxt.space/about" />
+        <image:image>
+            <image:loc>https://niqitos.nuxt.space/_ipx/_/profile.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://niqitos.nuxt.space/en/blog</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://niqitos.nuxt.space/blog" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://niqitos.nuxt.space/en/blog" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://niqitos.nuxt.space/blog" />
+        <image:image>
+            <image:loc>https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.pexels.com/photos/40799/paper-colorful-color-loose-40799.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.pexels.com/photos/4050314/pexels-photo-4050314.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://niqitos.nuxt.space/en/en</loc>
+        <xhtml:link rel="alternate" href="https://niqitos.nuxt.space/en/en" hreflang="en" />
+    </url>
+    <url>
+        <loc>https://niqitos.nuxt.space/en/projects</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://niqitos.nuxt.space/projects" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://niqitos.nuxt.space/en/projects" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://niqitos.nuxt.space/projects" />
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1470&amp;amp;q=80</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1613858749733-3a3e456e3d9e?q=80&amp;amp;w=2670&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1470&amp;amp;q=80</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&amp;amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1470&amp;amp;q=80</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://niqitos.nuxt.space/en/speaking</loc>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://niqitos.nuxt.space/speaking" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://niqitos.nuxt.space/en/speaking" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://niqitos.nuxt.space/speaking" />
+    </url>
+    <url>
+        <loc>https://niqitos.nuxt.space/en/en/about</loc>
+        <xhtml:link rel="alternate" href="https://niqitos.nuxt.space/en/en/about" hreflang="en" />
+    </url>
+</urlset>
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.4.7 at 2025-09-23T22:02:10.724Z -->
