@@ -1,0 +1,29 @@
+title: About Me
+description: Learn about my journey as a Full-Stack Developer, my approach to work, and my passion for building reliable, user-friendly digital products.
+content: |
+  Hi, I’m **Nikita Baranov**, a Full-Stack Developer. I build clean, efficient, and scalable applications. For the past eight years I’ve focused on digital product development, creating solutions that are highly functional, intuitive, and enjoyable to use. My work connects thoughtful user interfaces with robust backend architecture to deliver seamless and reliable experiences.
+
+  On the frontend, I enjoy working with modern frameworks like `Vue`, `Nuxt`, and `React` to craft accessible, user-friendly interfaces. On the backend, I use `Laravel`, `PostgreSQL` and other SQL databases, `Node.js`, and RESTful APIs to design secure, maintainable systems that evolve with the product.
+
+  My journey began at Kharkiv Polytechnic Institute, where I earned a degree in Philology. I started in programming but switched to English after two years when I discovered a passion for languages. During my studies I worked in customer support at the U.S.-based domain registrar [namecheap.com](https://namecheap.com). That experience improved my English, and after graduating I returned to programming — the field that became my career.
+
+  ### My approach to work
+
+  I treat every task as an opportunity to make something faster, more efficient, or—ideally—fully automated. Great system design starts with understanding the "why": users’ needs, motivations, and pain points.
+
+  I aim to create interfaces that feel natural and fast, where functionality and aesthetics work together. A great interface doesn’t require a manual.
+
+  ### What drives me
+
+  I’m motivated by curiosity and a commitment to writing clear, well-structured code. Whether I’m optimizing database queries, refining UI components, or configuring CI/CD pipelines, my goal is the same: deliver high-quality software that solves real problems.
+
+  ### After hours
+
+  I’m often exploring new technologies, experimenting with side projects, or studying performance optimization and best practices—always looking to sharpen my skills. When I’m not coding, I enjoy watching films and playing guitar or piano.
+
+  Thanks for visiting my portfolio. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you’d like to collaborate.
+# images:
+#   - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+#     alt: My coffee workspace
+#   - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+#     alt: My trip to Tokyo

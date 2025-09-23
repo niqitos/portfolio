@@ -1,0 +1,33 @@
+export default {
+  index: {
+    title: 'Home',
+    available: 'Available for new projects',
+    unavailable: 'Not available at the moment'
+  },
+  projects: {
+    title: 'Projects'
+  },
+  blog: {
+    title: 'Blog'
+  },
+  speaking: {
+    title: 'Speaking'
+  },
+  about: {
+    title: 'About'
+  },
+  footer: {
+    copyright: 'All rights reserved',
+    icons: {
+      whatsapp: 'My WhatsApp',
+      telegram: 'My Telegram',
+      github: 'My GitHub'
+    }
+  },
+  theme: {
+    switch: 'Switch to {theme} mode'
+  },
+  error: {
+    404: 'Page not found'
+  }
+}
