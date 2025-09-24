@@ -12,7 +12,6 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.68",
     "@iconify-json/simple-icons": "^1.2.53",
     "@nuxt/content": "^3.7.1",
     "@nuxt/image": "^1.11.0",
@@ -26,6 +25,8 @@
     "nuxt-og-image": "^5.1.11"
   },
   "devDependencies": {
+    "@iconify-json/logos": "^1.2.9",
+    "@iconify-json/lucide": "^1.2.68",
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.36.0",
     "typescript": "^5.9.2",
