@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
-const { data: page } = await useAsyncData(`${locale.value}/projects-page`, () => queryCollection(`pages_${locale.value}`).first())
-console.log(page.value)
+const { data: page } = await useAsyncData(`${locale.value}/projects-page`, () => queryCollection(`pages_${locale.value}`)
+  .path(`/${locale.value}/projects`)
+  .first()
+)
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -62,7 +65,7 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-      <Motion
+      <!-- <Motion
         v-for="(project, index) in projects"
         :key="project.title"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
@@ -118,7 +121,7 @@ useSeoMeta({
             class="object-cover w-full h-48 rounded-lg"
           />
         </UPageCard>
-      </Motion>
+      </Motion> -->
     </UPageSection>
   </UPage>
 </template>

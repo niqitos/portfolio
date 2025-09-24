@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
-const { data: page } = await useAsyncData(`${locale.value}/blog-page`, () => queryCollection(`pages_${locale.value}`).first())
+const { data: page } = await useAsyncData(`${locale.value}/blog-page`, () => queryCollection(`pages_${locale.value}`)
+  // .path(`/${locale.value}/blog`)
+  .first()
+)
 
 if (!page.value) {
   throw createError({
@@ -50,7 +53,7 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-      <UBlogPosts orientation="vertical">
+      <!-- <UBlogPosts orientation="vertical">
         <Motion
           v-for="(post, index) in posts"
           :key="index"
@@ -74,7 +77,7 @@ useSeoMeta({
             }"
           />
         </Motion>
-      </UBlogPosts>
+      </UBlogPosts> -->
     </UPageSection>
   </UPage>
 </template>

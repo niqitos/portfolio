@@ -164,7 +164,7 @@ export default defineContentConfig({
         type: 'page',
         source: {
           include: 'uk/blog/*.md',
-          prefix: ''
+          prefix: '/blog'
         },
         schema: createBlogSchema
       })
@@ -174,7 +174,7 @@ export default defineContentConfig({
         type: 'page',
         source: {
           include: 'en/blog/*.md',
-          prefix: '/en'
+          prefix: '/en/blog'
         },
         schema: createBlogSchema
       })
