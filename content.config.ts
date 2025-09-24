@@ -30,6 +30,11 @@ const createAuthorSchema = () => z.object({
   avatar: createImageSchema().optional()
 })
 
+const createStackItemsSchema = () => z.object({
+  title: z.string(),
+  icon: z.string()
+})
+
 const createTestimonialSchema = () => z.object({
   quote: z.string(),
   author: createAuthorSchema()
@@ -52,6 +57,13 @@ const createIndexSchema = z.object({
         color: z.string()
       })
     }))
+  }),
+  stack: createBaseSchema().extend({
+    items: z.object({
+      backend: createStackItemsSchema,
+      frontend: createStackItemsSchema,
+      devops: createStackItemsSchema
+    })
   }),
   testimonials: z.array(createTestimonialSchema()),
   blog: createBaseSchema(),

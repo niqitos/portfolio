@@ -187,9 +187,9 @@ defineProps<{
           width="234"
           height="234"
           class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
           v-bind="img"
         />
+        <!-- :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'" -->
       </Motion>
     </UMarquee>
   </UPageHero>

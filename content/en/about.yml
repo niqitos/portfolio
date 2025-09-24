@@ -3,7 +3,7 @@ description: Learn about my journey as a Full-Stack Developer, my approach to wo
 content: |
   Hi, I’m **Nikita Baranov**, a Full-Stack Developer. I build clean, efficient, and scalable applications. For the past eight years I’ve focused on digital product development, creating solutions that are highly functional, intuitive, and enjoyable to use. My work connects thoughtful user interfaces with robust backend architecture to deliver seamless and reliable experiences.
 
-  On the frontend, I enjoy working with modern frameworks like `Vue`, `Nuxt`, and `React` to craft accessible, user-friendly interfaces. On the backend, I use `Laravel`, `PostgreSQL` and other SQL databases, `Node.js`, and RESTful APIs to design secure, maintainable systems that evolve with the product.
+  On the frontend, I enjoy working with modern frameworks like `Vue`{color="success"}, `Nuxt`{color="success"}, and `React` to craft accessible, user-friendly interfaces. On the backend, I use `Laravel`{color="error"}, `PostgreSQL`{color="info"} and other SQL databases, `Node.js`, and RESTful APIs to design secure, maintainable systems that evolve with the product.
 
   My journey began at Kharkiv Polytechnic Institute, where I earned a degree in Philology. I started in programming but switched to English after two years when I discovered a passion for languages. During my studies I worked in customer support at the U.S.-based domain registrar [namecheap.com](https://namecheap.com). That experience improved my English, and after graduating I returned to programming — the field that became my career.
 

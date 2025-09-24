@@ -13,6 +13,7 @@ if (!page.value) {
     fatal: true
   })
 }
+
 const { data: posts } = await useAsyncData('blogs', () => queryCollection(`blog_${locale.value}`)
   .order('date', 'DESC')
   .all()
@@ -46,6 +47,7 @@ useSeoMeta({
         links: 'justify-start'
       }"
     />
+
     <UPageSection
       :ui="{
         container: '!pt-0'
@@ -67,12 +69,11 @@ useSeoMeta({
             v-bind="post"
             :ui="{
               root: 'md:grid md:grid-cols-2 group overflow-visible transition-all duration-300',
-              image:
-                'group-hover/blog-post:scale-105 rounded-lg shadow-lg border-4 border-muted ring-2 ring-default',
-              header:
-                index % 2 === 0
-                  ? 'sm:-rotate-1 overflow-visible'
-                  : 'sm:rotate-1 overflow-visible'
+              image: 'group-hover/blog-post:scale-105 rounded-lg shadow-lg border-4 border-muted ring-2 ring-default'
+              // header:
+              //   index % 2 === 0
+              //     ? 'sm:-rotate-1 overflow-visible'
+              //     : 'sm:rotate-1 overflow-visible'
             }"
           />
         </Motion>

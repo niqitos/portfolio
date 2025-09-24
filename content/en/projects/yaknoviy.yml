@@ -1,0 +1,6 @@
+title: Yaknoviy
+description: Independently designed and developed a full-featured marketplace for used electronics from the ground up. Built with Laravel, Nuxt.js 4, PostgreSQL, and Elasticsearch, hosted on AWS with CI/CD pipelines configured via GitHub and AWS. Implemented multiple RESTful APIs, including payment gateways (PrivatBank acquiring and installment plans, Monobank installments, PayPal) and delivery service integrations (Nova Poshta, Ukrposhta).
+image: /projects/yaknoviy.png
+url: https://yaknoviy.ua/en
+tags: ['Full-stack', 'Site', 'Admin APP', 'UX', 'UI']
+date: '2020'

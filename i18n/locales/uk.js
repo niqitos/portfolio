@@ -5,7 +5,8 @@ export default {
     unavailable: 'Наразі не шукаю нові проєкти'
   },
   projects: {
-    title: 'Проєкти'
+    title: 'Проєкти',
+    view: 'Переглянути проєкт'
   },
   blog: {
     title: 'Блог',

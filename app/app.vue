@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import * as locales from '@nuxt/ui/locale'
-
 const colorMode = useColorMode()
 const { navLinks } = useLinks()
 const { locale } = useI18n()
@@ -44,7 +42,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 </script>
 
 <template>
-  <UApp :locale="locales[locale]">
+  <UContainer class="sm:border-x border-default px-0">
     <NuxtLoadingIndicator />
 
     <NuxtLayout>
@@ -62,5 +60,5 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
         :fuse="{ resultLimit: 42 }"
       />
     </ClientOnly>
-  </UApp>
+  </UContainer>
 </template>

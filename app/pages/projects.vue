@@ -14,9 +14,10 @@ if (!page.value) {
   })
 }
 
-// const { data: projects } = await useAsyncData('projects', () => queryCollection(`projects_${locale.value}`)
-//   .all()
-// )
+const { data: projects } = await useAsyncData('projects', () => queryCollection(`projects_${locale.value}`)
+  .order('date', 'DESC')
+  .all()
+)
 
 const { global } = useAppConfig()
 
@@ -59,7 +60,7 @@ useSeoMeta({
       </template>
     </UPageHero>
 
-    <!-- <UPageSection
+    <UPageSection
       :ui="{
         container: '!pt-0'
       }"
@@ -81,21 +82,32 @@ useSeoMeta({
           :reverse="index % 2 === 1"
           class="group"
           :ui="{
-            wrapper: 'max-sm:order-last'
+            wrapper: 'max-sm:order-last',
+            container: '!items-start'
           }"
         >
           <template #leading>
-            <span class="text-sm text-muted">
+            <div class="text-sm text-muted">
               {{ new Date(project.date).getFullYear() }}
-            </span>
+            </div>
           </template>
 
           <template #footer>
+            <div class="flex gap-2 flex-wrap mb-4">
+              <UBadge
+                v-for="(tag, tagIndex) in project.tags"
+                :key="`project-${index}-tag-${tagIndex}`"
+                variant="subtle"
+                color="neutral"
+                :label="tag"
+              />
+            </div>
+
             <ULink
               :to="project.url"
               class="text-sm text-primary flex items-center"
             >
-              View Project
+              {{ $t('projects.view') }}
               <UIcon
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
@@ -110,6 +122,6 @@ useSeoMeta({
           />
         </UPageCard>
       </Motion>
-    </UPageSection> -->
+    </UPageSection>
   </UPage>
 </template>

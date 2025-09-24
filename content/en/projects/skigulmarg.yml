@@ -1,0 +1,6 @@
+title: Ski Gulmarg
+description: Developed a mobile-first web application for a ski resort in Gulmarg using Grav CMS and Bootstrap. Integrated the Agoda booking widget, implemented site-wide search, and populated all pages with content in English, French, Chinese, and Spanish.
+image: /projects/skigulmarg.png
+url: https://skigulmarg.com
+tags: ['Full-stack', 'Site', 'Admin APP', 'UX', 'UI']
+date: '2018'

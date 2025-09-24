@@ -5,7 +5,8 @@ export default {
     unavailable: 'Not available at the moment'
   },
   projects: {
-    title: 'Projects'
+    title: 'Projects',
+    view: 'View Project'
   },
   blog: {
     title: 'Blog',

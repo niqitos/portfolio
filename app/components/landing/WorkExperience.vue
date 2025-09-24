@@ -45,7 +45,10 @@ defineProps<{
             >
               <span class="font-medium">{{ experience.company.name }}</span>
 
-              <UIcon :name="experience.company.logo" />
+              <UIcon
+                v-if="experience.company.logo"
+                :name="experience.company.logo"
+              />
             </div>
           </ULink>
         </Motion>

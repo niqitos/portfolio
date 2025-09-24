@@ -1,0 +1,6 @@
+title: Avic
+description: Integrated multiple payment gateways, including LiqPay, WayForPay, and ConcordPay. Implemented integrations with major shipping providers such as Nova Poshta, Ukrposhta, Meest, and Justin. Connected partner inventory via RESTful APIs to synchronize real-time product availability. Built a custom content management system for administrators to manage SEO, products, pricing, stock, deliveries, orders, payments, and blog posts.
+image: /projects/avic.png
+url: https://avic.com.ua
+tags: ['Full-stack', 'Site', 'Admin APP', 'UX', 'UI']
+date: '2019'
