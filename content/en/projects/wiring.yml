@@ -1,0 +1,6 @@
+title: wiring.blog
+description: This is my personal blog dedicated to programming microcontrollers and building IoT projects. It is built with Nuxt 4 and uses the @nuxtjs/content module to provide headless CMS functionality.
+image: /projects/wiring.png
+url: https://wiring.blog/en
+tags: ['Site', 'UX', 'UI', 'Editor-in-chief']
+date: '2025'
