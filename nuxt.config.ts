@@ -132,21 +132,21 @@ export default defineNuxtConfig({
         'lucide:search',
         'lucide:sun',
         'lucide:user',
-        // logos Icons
+
         'logos:php',
         'logos:laravel',
-        'logos:wordpress-icon',
+        // 'logos:wordpress-icon',
         'logos:yii',
-        'logos:opencart',
+        // 'logos:opencart',
         'logos:drupal-icon',
-        'logos:sqlite',
+        // 'logos:sqlite',
         'logos:mysql-icon',
         'logos:postgresql',
         'logos:mongodb-icon',
         'logos:elasticsearch',
         'logos:javascript',
         'logos:typescript-icon',
-        'logos:jquery',
+        // 'logos:jquery',
         'logos:vue',
         'logos:nuxt-icon',
         'logos:vuetifyjs',
@@ -167,12 +167,21 @@ export default defineNuxtConfig({
         'logos:linux-tux',
         'logos:bash-icon',
         'logos:docker-icon',
-        'logos:aws',
+        // 'logos:aws',
         'logos:google-cloud',
         'logos:digital-ocean-icon',
         'logos:git-icon',
-        'logos:github-icon',
-        'logos:gitlab-icon'
+        // 'logos:github-icon',
+        'logos:gitlab-icon',
+
+        'devicon:jquery',
+        'devicon:sqlite',
+
+        'fa7-brands:wordpress',
+        'fa7-brands:opencart',
+        'fa7-brands:github',
+
+        'skill-icons:aws-dark'
       ]
     }
   }

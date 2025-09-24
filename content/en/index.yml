@@ -61,7 +61,7 @@ experience:
       date: 2013-2016
       company:
         name: Namecheap
-        logo: 'i-simple-icons-namecheap'
+        logo: 'i-simple-icons:namecheap'
         url: 'https://namecheap.com'
         color: '#DE3723'
 stack:
@@ -73,15 +73,16 @@ stack:
       - title: Laravel
         icon: logos:laravel
       - title: Wordpress
-        icon: logos:wordpress-icon
+        icon: fa7-brands:wordpress
       - title: UII
         icon: logos:yii
       - title: Opencart
-        icon: logos:opencart
+        icon: fa7-brands:opencart
+        color: '#04B6F0'
       - title: Drupal
         icon: logos:drupal-icon
       - title: SQLite
-        icon: logos:sqlite
+        icon: devicon:sqlite
       - title: MySQL
         icon: logos:mysql-icon
       - title: PostgreSQL
@@ -96,7 +97,7 @@ stack:
       - title: TypeScript
         icon: logos:typescript-icon
       - title: JQuery
-        icon: logos:jquery
+        icon: devicon:jquery
       - title: Vue
         icon: logos:vue
       - title: Nuxt
@@ -139,7 +140,7 @@ stack:
       - title: Docker
         icon: logos:docker-icon
       - title: Aws
-        icon: logos:aws
+        icon: skill-icons:aws-dark
       - title: GCP
         icon: logos:google-cloud
       - title: Digital Ocean
@@ -147,7 +148,7 @@ stack:
       - title: Git
         icon: logos:git-icon
       - title: GitHub
-        icon: logos:github-icon
+        icon: fa7-brands:github
       - title: GitLab
         icon: logos:gitlab-icon
 testimonials:

@@ -30,10 +30,13 @@ const createAuthorSchema = () => z.object({
   avatar: createImageSchema().optional()
 })
 
-const createStackItemsSchema = () => z.object({
-  title: z.string(),
-  icon: z.string()
-})
+const createStackItemsSchema = () => z.array(
+  z.object({
+    title: z.string(),
+    icon: z.string(),
+    color: z.string().optional()
+  })
+)
 
 const createTestimonialSchema = () => z.object({
   quote: z.string(),

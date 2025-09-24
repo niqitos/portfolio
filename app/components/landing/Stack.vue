@@ -32,7 +32,10 @@ defineProps<{
         >
           <UIcon
             :name="stack.icon"
-            class="h-10 min-w-10"
+            class="h-10 min-w-10 text-base"
+            :style="stack.color ? {
+              color: stack.color
+            } : {}"
           />
         </UTooltip>
       </UMarquee>

@@ -12,7 +12,6 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/simple-icons": "^1.2.53",
     "@nuxt/content": "^3.7.1",
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^4.0.0",
@@ -25,8 +24,12 @@
     "nuxt-og-image": "^5.1.11"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.2.44",
+    "@iconify-json/fa7-brands": "^1.2.0",
     "@iconify-json/logos": "^1.2.9",
     "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/simple-icons": "^1.2.53",
+    "@iconify-json/skill-icons": "^1.2.3",
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.36.0",
     "typescript": "^5.9.2",
