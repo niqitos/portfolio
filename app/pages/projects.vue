@@ -1,9 +1,10 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('projects-page', () => {
-  return queryCollection('pages').path('/projects').first()
-})
+const { t, locale } = useI18n()
 
-const { t } = useI18n()
+const { data: page } = await useAsyncData('projects-page', () => queryCollection(`pages_${locale.value}`)
+  .path(`/${locale.value}/projects`)
+  .first()
+)
 
 if (!page.value) {
   throw createError({
@@ -13,9 +14,9 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
-})
+// const { data: projects } = await useAsyncData('projects', () => queryCollection(`projects_${locale.value}`)
+//   .all()
+// )
 
 const { global } = useAppConfig()
 
@@ -49,6 +50,7 @@ useSeoMeta({
             :to="global.meetingLink"
             v-bind="page.links[0]"
           />
+
           <UButton
             :to="`mailto:${global.email}`"
             v-bind="page.links[1]"
@@ -56,7 +58,8 @@ useSeoMeta({
         </div>
       </template>
     </UPageHero>
-    <UPageSection
+
+    <!-- <UPageSection
       :ui="{
         container: '!pt-0'
       }"
@@ -86,6 +89,7 @@ useSeoMeta({
               {{ new Date(project.date).getFullYear() }}
             </span>
           </template>
+
           <template #footer>
             <ULink
               :to="project.url"
@@ -98,13 +102,14 @@ useSeoMeta({
               />
             </ULink>
           </template>
-          <img
+
+          <NuxtImg
             :src="project.image"
             :alt="project.title"
             class="object-cover w-full h-48 rounded-lg"
-          >
+          />
         </UPageCard>
       </Motion>
-    </UPageSection>
+    </UPageSection> -->
   </UPage>
 </template>

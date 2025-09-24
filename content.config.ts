@@ -96,10 +96,30 @@ export default defineContentConfig({
         schema: createIndexSchema
       })
     ),
-    projects: defineCollection(
+    projects_uk: defineCollection(
       asSitemapCollection({
         type: 'data',
-        source: 'projects/*.yml',
+        source: {
+          include: 'uk/projects/*.yml',
+          prefix: ''
+        },
+        schema: z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+          image: z.string().nonempty().editor({ input: 'media' }),
+          url: z.string().nonempty(),
+          tags: z.array(z.string()),
+          date: z.date()
+        })
+      })
+    ),
+    projects_en: defineCollection(
+      asSitemapCollection({
+        type: 'data',
+        source: {
+          include: 'en/projects/*.yml',
+          prefix: '/en'
+        },
         schema: z.object({
           title: z.string().nonempty(),
           description: z.string().nonempty(),
@@ -122,12 +142,36 @@ export default defineContentConfig({
         })
       })
     ),
-    pages: defineCollection(
+    pages_uk: defineCollection(
       asSitemapCollection({
         type: 'page',
         source: [
-          { include: 'projects.yml' },
-          { include: 'blog.yml' }
+          {
+            include: 'uk/projects.yml',
+            prefix: ''
+          },
+          {
+            include: 'uk/blog.yml',
+            prefix: ''
+          }
+        ],
+        schema: z.object({
+          links: z.array(createButtonSchema())
+        })
+      })
+    ),
+    pages_en: defineCollection(
+      asSitemapCollection({
+        type: 'page',
+        source: [
+          {
+            include: 'en/projects.yml',
+            prefix: '/en'
+          },
+          {
+            include: 'en/blog.yml',
+            prefix: '/en'
+          }
         ],
         schema: z.object({
           links: z.array(createButtonSchema())

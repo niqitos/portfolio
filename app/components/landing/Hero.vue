@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
-
 const { global } = useAppConfig()
 const { footerLinks } = useLinks()
 
 defineProps<{
-  page: IndexCollectionItem
+  page: any
 }>()
 </script>
 
@@ -105,7 +103,7 @@ defineProps<{
       >
         <div class="flex flex-col items-center gap-6">
           <UButton
-            v-if="page.hero.links"
+            v-if="page.hero.links?.length"
             v-bind="page.hero.links[0]"
           />
 
@@ -136,7 +134,6 @@ defineProps<{
         <Motion
           v-for="(link, index) of footerLinks"
           :key="index"
-
           :initial="{
             scale: 1.1,
             opacity: 0,
@@ -160,6 +157,7 @@ defineProps<{
     </template>
 
     <UMarquee
+      v-if="page.hero.images?.length"
       pause-on-hover
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
     >

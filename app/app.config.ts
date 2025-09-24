@@ -5,8 +5,8 @@ export default defineAppConfig({
       light: '/profile.webp',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://cal.com/',
-    email: 'ui-pro@nuxt.com',
+    meetingLink: 'https://meet.google.com',
+    email: 'mykytabaranov@gmail.com',
     available: true
   },
   ui: {
@@ -21,28 +21,5 @@ export default defineAppConfig({
         description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
       }
     }
-  },
-  footer: {
-    colorMode: false,
-    links: [
-      {
-        'icon': 'i-simple-icons-discord',
-        'to': 'https://go.nuxt.com/discord',
-        'target': '_blank',
-        'aria-label': 'Nuxt on Discord'
-      },
-      {
-        'icon': 'i-simple-icons-x',
-        'to': 'https://go.nuxt.com/x',
-        'target': '_blank',
-        'aria-label': 'Nuxt on X'
-      },
-      {
-        'icon': 'i-simple-icons-github',
-        'to': 'https://github.com/nuxt/ui',
-        'target': '_blank',
-        'aria-label': 'Nuxt UI on GitHub'
-      }
-    ]
   }
 })
