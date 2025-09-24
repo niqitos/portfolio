@@ -8,7 +8,10 @@ export default {
     title: 'Projects'
   },
   blog: {
-    title: 'Blog'
+    title: 'Blog',
+    error: {
+      404: 'Blogs posts not found'
+    }
   },
   speaking: {
     title: 'Speaking'

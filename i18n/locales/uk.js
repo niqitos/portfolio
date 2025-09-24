@@ -8,7 +8,10 @@ export default {
     title: 'Проєкти'
   },
   blog: {
-    title: 'Блог'
+    title: 'Блог',
+    error: {
+      404: 'Дописи в блогах не знайдено'
+    }
   },
   speaking: {
     title: 'Слухати'

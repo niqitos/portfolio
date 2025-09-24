@@ -3,13 +3,13 @@ import type { ContentNavigationItem } from '@nuxt/content'
 import { mapContentNavigation } from '@nuxt/ui/utils/content'
 import { findPageBreadcrumb } from '@nuxt/content/utils'
 
+const { locale, t } = useI18n()
 const route = useRoute()
 
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
+const { data: page } = await useAsyncData(route.path, () => queryCollection(`blog_${locale.value}`)
+  .path(route.path)
+  .first()
 )
-
-const { t } = useI18n()
 
 if (!page.value) {
   throw createError({
@@ -20,7 +20,7 @@ if (!page.value) {
 }
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
+  queryCollectionItemSurroundings(`blog_${locale.value}`, route.path, {
     fields: ['description']
   })
 )

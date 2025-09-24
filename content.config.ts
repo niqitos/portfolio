@@ -69,6 +69,37 @@ const createIndexSchema = z.object({
   })
 })
 
+const createProjectsSchema = z.object({
+  title: z.string().nonempty(),
+  description: z.string().nonempty(),
+  image: z.string().nonempty().editor({ input: 'media' }),
+  url: z.string().nonempty(),
+  tags: z.array(z.string()),
+  date: z.date()
+})
+
+const createBlogSchema = z.object({
+  minRead: z.number(),
+  date: z.date(),
+  image: z.string().nonempty().editor({ input: 'media' }),
+  author: createAuthorSchema()
+})
+
+const createPagesSchema = z.object({
+  links: z.array(createButtonSchema())
+})
+
+const createSpeakingSchema = z.object({
+  links: z.array(createButtonSchema()),
+  events: z.array(z.object({
+    category: z.enum(['Live talk', 'Podcast', 'Conference']),
+    title: z.string(),
+    date: z.date(),
+    location: z.string(),
+    url: z.string().optional()
+  }))
+})
+
 const createAboutSchema = z.object({
   content: z.object({}),
   images: z.array(createImageSchema())
@@ -103,14 +134,7 @@ export default defineContentConfig({
           include: 'uk/projects/*.yml',
           prefix: ''
         },
-        schema: z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty(),
-          image: z.string().nonempty().editor({ input: 'media' }),
-          url: z.string().nonempty(),
-          tags: z.array(z.string()),
-          date: z.date()
-        })
+        schema: createProjectsSchema
       })
     ),
     projects_en: defineCollection(
@@ -120,26 +144,27 @@ export default defineContentConfig({
           include: 'en/projects/*.yml',
           prefix: '/en'
         },
-        schema: z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty(),
-          image: z.string().nonempty().editor({ input: 'media' }),
-          url: z.string().nonempty(),
-          tags: z.array(z.string()),
-          date: z.date()
-        })
+        schema: createProjectsSchema
       })
     ),
-    blog: defineCollection(
+    blog_uk: defineCollection(
       asSitemapCollection({
         type: 'page',
-        source: 'blog/*.md',
-        schema: z.object({
-          minRead: z.number(),
-          date: z.date(),
-          image: z.string().nonempty().editor({ input: 'media' }),
-          author: createAuthorSchema()
-        })
+        source: {
+          include: 'uk/blog/*.md',
+          prefix: ''
+        },
+        schema: createBlogSchema
+      })
+    ),
+    blog_en: defineCollection(
+      asSitemapCollection({
+        type: 'page',
+        source: {
+          include: 'en/blog/*.md',
+          prefix: '/en'
+        },
+        schema: createBlogSchema
       })
     ),
     pages_uk: defineCollection(
@@ -155,9 +180,7 @@ export default defineContentConfig({
             prefix: ''
           }
         ],
-        schema: z.object({
-          links: z.array(createButtonSchema())
-        })
+        schema: createPagesSchema
       })
     ),
     pages_en: defineCollection(
@@ -173,25 +196,27 @@ export default defineContentConfig({
             prefix: '/en'
           }
         ],
-        schema: z.object({
-          links: z.array(createButtonSchema())
-        })
+        schema: createPagesSchema
       })
     ),
-    speaking: defineCollection(
+    speaking_uk: defineCollection(
       asSitemapCollection({
         type: 'page',
-        source: 'speaking.yml',
-        schema: z.object({
-          links: z.array(createButtonSchema()),
-          events: z.array(z.object({
-            category: z.enum(['Live talk', 'Podcast', 'Conference']),
-            title: z.string(),
-            date: z.date(),
-            location: z.string(),
-            url: z.string().optional()
-          }))
-        })
+        source: {
+          include: 'uk/speaking.yml',
+          prefix: ''
+        },
+        schema: createSpeakingSchema
+      })
+    ),
+    speaking_en: defineCollection(
+      asSitemapCollection({
+        type: 'page',
+        source: {
+          include: 'en/speaking.yml',
+          prefix: '/en'
+        },
+        schema: createSpeakingSchema
       })
     ),
     about_uk: defineCollection(

@@ -7,11 +7,11 @@ type Event = {
   category: 'Conference' | 'Live talk' | 'Podcast'
 }
 
-const { data: page } = await useAsyncData('speaking', () => {
-  return queryCollection('speaking').first()
-})
+const { locale, t } = useI18n()
 
-const { t } = useI18n()
+const { data: page } = await useAsyncData('speaking', () => queryCollection(`speaking_${locale.value}`)
+  .first()
+)
 
 if (!page.value) {
   throw createError({
@@ -32,14 +32,17 @@ const { global } = useAppConfig()
 
 const groupedEvents = computed((): Record<Event['category'], Event[]> => {
   const events = page.value?.events || []
+
   const grouped: Record<Event['category'], Event[]> = {
     'Conference': [],
     'Live talk': [],
     'Podcast': []
   }
+
   for (const event of events) {
     if (grouped[event.category]) grouped[event.category].push(event)
   }
+
   return grouped
 })
 
@@ -67,6 +70,7 @@ function formatDate(dateString: string): string {
         />
       </template>
     </UPageHero>
+
     <UPageSection
       :ui="{
         container: '!pt-0'
@@ -96,12 +100,15 @@ function formatDate(dateString: string): string {
               :to="event.url"
               class="absolute inset-0"
             />
+
             <div class="mb-1 text-sm font-medium text-muted">
               <span>{{ event.location }}</span>
+
               <span
                 v-if="event.location && event.date"
                 class="mx-1"
               >·</span>
+
               <span v-if="event.date">{{ formatDate(event.date) }}</span>
             </div>
 

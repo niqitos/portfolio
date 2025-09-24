@@ -1,9 +1,10 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('blog-page', () => {
-  return queryCollection('pages').path('/blog').first()
-})
+const { t, locale } = useI18n()
 
-const { t } = useI18n()
+const { data: page } = await useAsyncData('blog-page', () => queryCollection(`pages_${locale.value}`)
+  .path('/blog')
+  .first()
+)
 
 if (!page.value) {
   throw createError({
@@ -12,13 +13,15 @@ if (!page.value) {
     fatal: true
   })
 }
-const { data: posts } = await useAsyncData('blogs', () =>
-  queryCollection('blog').order('date', 'DESC').all()
+const { data: posts } = await useAsyncData('blogs', () => queryCollection(`blog_${locale.value}`)
+  .order('date', 'DESC')
+  .all()
 )
+
 if (!posts.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'blogs posts not found',
+    statusMessage: t('blog.error.404'),
     fatal: true
   })
 }

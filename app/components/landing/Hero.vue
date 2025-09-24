@@ -150,7 +150,10 @@ defineProps<{
           }"
         >
           <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
+            size="md"
+            color="neutral"
+            variant="ghost"
+            v-bind="link"
           />
         </Motion>
       </div>
