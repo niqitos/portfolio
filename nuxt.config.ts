@@ -1,8 +1,24 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxt/ui',
+    '@nuxt/content',
+    '@nuxtjs/i18n',
+    '@nuxtjs/sitemap',
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'motion-v/nuxt'
+  ],
+
+  devtools: {
+    enabled: true
+  },
+
   app: {
     head: {
-       meta: [
+      meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'apple-mobile-web-app-title', content: 'Niqitos' }
@@ -39,21 +55,6 @@ export default defineNuxtConfig({
         }
       ]
     }
-  },
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxt/content',
-    '@nuxtjs/i18n',
-    '@nuxtjs/sitemap',
-    '@vueuse/nuxt',
-    'nuxt-og-image',
-    'motion-v/nuxt'
-  ],
-
-  devtools: {
-    enabled: true
   },
 
   css: [
