@@ -77,6 +77,7 @@ useSeoMeta({
           :title="project.title"
           :description="project.description"
           :to="project.url"
+          target="_blank"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -105,6 +106,7 @@ useSeoMeta({
 
             <ULink
               :to="project.url"
+              target="_blank"
               class="text-sm text-primary flex items-center"
             >
               {{ $t('projects.view') }}
