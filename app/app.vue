@@ -3,7 +3,10 @@ const colorMode = useColorMode()
 const { navLinks } = useLinks()
 const { locale } = useI18n()
 
-const color = computed(() => colorMode.value === 'dark' ? '#171717' : 'white')
+const color = computed(() => colorMode.value === 'dark'
+  ? useCssVar('--ui-color-neutral-900').value
+  : useCssVar('--ui-color-white').value
+)
 
 useHead({
   meta: [
