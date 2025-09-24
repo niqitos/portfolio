@@ -5,9 +5,11 @@ title: "👋, I'm Nikita Baranov Full-Stack Developer"
 description: "I build clean, efficient, and scalable applications using Laravel, Vue and other technologies"
 hero:
   links:
-    # - label: "Use this template"
-    #   to: https://github.com/nuxt-ui-templates/portfolio
-    #   color: "neutral"
+    - label: CV
+      to: https://www.canva.com/design/DAE5wJ0YMbg/g69svoKYhwnapsWpHJwfGg/view?utm_content=DAE5wJ0YMbg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf0c5a8b216
+      color: neutral
+      icon: i-lucide:download
+      target: _blank
   images:
     # - src: /hero/random-1.avif
     #   alt: Random Image 1

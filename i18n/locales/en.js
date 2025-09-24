@@ -32,6 +32,7 @@ export default {
     switch: 'Switch to {theme} mode'
   },
   error: {
+    back: 'Back to home',
     404: 'Page not found'
   }
 }

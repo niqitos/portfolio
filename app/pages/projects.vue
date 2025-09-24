@@ -14,10 +14,10 @@ if (!page.value) {
   })
 }
 
-// const { data: projects } = await useAsyncData('projects', () => queryCollection(`projects_${locale.value}`)
-//   .order('date', 'DESC')
-//   .all()
-// )
+const { data: projects } = await useAsyncData(`${locale.value}/projects`, () => queryCollection(`projects_${locale.value}`)
+  .order('date', 'DESC')
+  .all()
+)
 
 const { global } = useAppConfig()
 
@@ -65,7 +65,7 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-      <!-- <Motion
+      <Motion
         v-for="(project, index) in projects"
         :key="project.title"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
@@ -121,7 +121,7 @@ useSeoMeta({
             class="object-cover w-full h-48 rounded-lg"
           />
         </UPageCard>
-      </Motion> -->
+      </Motion>
     </UPageSection>
   </UPage>
 </template>

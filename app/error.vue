@@ -44,7 +44,15 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     <UMain>
       <UContainer>
         <UPage>
-          <UError :error="error" />
+          <UError
+            :error="error"
+            :clear="{
+              label: $t('error.back'),
+              color: 'primary',
+              size: 'lg',
+              variant: 'solid'
+            }"
+          />
         </UPage>
       </UContainer>
     </UMain>

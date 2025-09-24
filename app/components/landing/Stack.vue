@@ -9,8 +9,7 @@ defineProps<{
     :title="page.stack.title"
     :ui="{
       container: '!p-0 gap-4 sm:gap-4 w-full overflow-hidden',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'mt-2 dark:bg-gray-200'
+      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium'
     }"
   >
     <template #description>

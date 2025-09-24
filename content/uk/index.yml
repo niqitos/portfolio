@@ -5,9 +5,11 @@ title: "👋, я Микита Баранов Full-Stack розробник"
 description: "Я створюю лаконічні, ефективні та масштабовані застосунки на Laravel, Vue та інших технологіях"
 hero:
   links:
-    # - label: "Use this template"
-    #   to: https://github.com/nuxt-ui-templates/portfolio
-    #   color: "neutral"
+    - label: Резюме
+      to: https://www.canva.com/design/DAGyapSF1j8/Gr2dko9I3zpb-YmMJEtTng/view?utm_content=DAGyapSF1j8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h23deb6a5ea
+      color: neutral
+      icon: i-lucide:download
+      target: _blank
   images:
     # - src: /hero/random-1.avif
     #   alt: Random Image 1

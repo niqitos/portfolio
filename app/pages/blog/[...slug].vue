@@ -3,11 +3,11 @@ import type { ContentNavigationItem } from '@nuxt/content'
 import { mapContentNavigation } from '@nuxt/ui/utils/content'
 import { findPageBreadcrumb } from '@nuxt/content/utils'
 
-const { locale, t } = useI18n()
+const { t, locale, defaultLocale } = useI18n()
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () => queryCollection(`blog_${locale.value}`)
-  .path(`${locale.value}/${route.path}`)
+  .path(`${locale.value !== defaultLocale ? `/${locale.value}` : ''}/${route.path}`)
   .first()
 )
 
