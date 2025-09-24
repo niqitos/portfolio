@@ -1,11 +1,8 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
-const { data: page } = await useAsyncData('projects-page', () => queryCollection(`pages_${locale.value}`)
-  .path(`/${locale.value}/projects`)
-  .first()
-)
-
+const { data: page } = await useAsyncData(`${locale.value}/projects-page`, () => queryCollection(`pages_${locale.value}`).first())
+console.log(page.value)
 if (!page.value) {
   throw createError({
     statusCode: 404,

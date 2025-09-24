@@ -170,7 +170,7 @@ testimonials:
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 blog:
   title: "Останні статті"
-  description: "Деякі мої останні думки"
+  description: "Деякі мої останні думки та спостереження про веброзробку й IT-індустрію."
 faq:
   title: Часті запитання
   description: Відповіді на поширені запитання щодо мого досвіду та послуг.

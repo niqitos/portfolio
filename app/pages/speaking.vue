@@ -9,9 +9,7 @@ type Event = {
 
 const { locale, t } = useI18n()
 
-const { data: page } = await useAsyncData('speaking', () => queryCollection(`speaking_${locale.value}`)
-  .first()
-)
+const { data: page } = await useAsyncData(`${locale.value}/speaking`, () => queryCollection(`speaking_${locale.value}`).first())
 
 if (!page.value) {
   throw createError({

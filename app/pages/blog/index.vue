@@ -1,10 +1,7 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
-const { data: page } = await useAsyncData('blog-page', () => queryCollection(`pages_${locale.value}`)
-  .path(`/${locale.value}/blog`)
-  .first()
-)
+const { data: page } = await useAsyncData(`${locale.value}/blog-page`, () => queryCollection(`pages_${locale.value}`).first())
 
 if (!page.value) {
   throw createError({
@@ -14,7 +11,7 @@ if (!page.value) {
   })
 }
 
-const { data: posts } = await useAsyncData('blogs', () => queryCollection(`blog_${locale.value}`)
+const { data: posts } = await useAsyncData(`${locale.value}/blogs`, () => queryCollection(`blog_${locale.value}`)
   .order('date', 'DESC')
   .all()
 )
