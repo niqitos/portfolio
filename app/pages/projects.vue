@@ -14,10 +14,10 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', () => queryCollection(`projects_${locale.value}`)
-  .order('date', 'DESC')
-  .all()
-)
+// const { data: projects } = await useAsyncData('projects', () => queryCollection(`projects_${locale.value}`)
+//   .order('date', 'DESC')
+//   .all()
+// )
 
 const { global } = useAppConfig()
 
