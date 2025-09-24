@@ -14,7 +14,7 @@ const { data: page } = await useAsyncData(route.path, () => queryCollection(`blo
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: t('error.404'),
+    statusMessage: t('error.404.title'),
     fatal: true
   })
 }

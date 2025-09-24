@@ -33,6 +33,9 @@ export default {
   },
   error: {
     back: 'Back to home',
-    404: 'Page not found'
+    404: {
+      title: 'Page not found',
+      description: 'We are sorry but this page could not be found.'
+    }
   }
 }

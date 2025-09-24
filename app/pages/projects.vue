@@ -9,7 +9,7 @@ const { data: page } = await useAsyncData(`${locale.value}/projects-page`, () =>
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: t('error.404'),
+    statusMessage: t('error.404.title'),
     fatal: true
   })
 }

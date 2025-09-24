@@ -18,8 +18,8 @@ useHead({
 })
 
 useSeoMeta({
-  title: t('error.404'),
-  description: 'We are sorry but this page could not be found.'
+  title: t('error.404.title'),
+  description: t('error.404.description')
 })
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
