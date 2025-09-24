@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
-
 defineProps<{
-  page: IndexCollectionItem
+  page: any
 }>()
 </script>
 
@@ -29,7 +27,9 @@ defineProps<{
           <p class="text-sm">
             {{ experience.date }}
           </p>
+
           <USeparator />
+
           <ULink
             class="flex items-center gap-1"
             :to="experience.company.url"
@@ -38,11 +38,13 @@ defineProps<{
             <span class="text-sm">
               {{ experience.position }}
             </span>
+
             <div
               class="inline-flex items-center gap-1"
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
+
               <UIcon :name="experience.company.logo" />
             </div>
           </ULink>

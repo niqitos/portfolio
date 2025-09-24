@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
-
 const props = defineProps<{
-  page: IndexCollectionItem
+  page: any
 }>()
 
 const items = computed(() => {
-  return props.page.faq?.categories.map((faq) => {
+  return props.page.faq?.categories.map((faq: any) => {
     return {
       label: faq.title,
       key: faq.title.toLowerCase(),
@@ -52,6 +50,7 @@ const ui = {
         >
           <template #body="{ item: _item }">
             <MDC
+              v-if="_item.content"
               :value="_item.content"
               class="px-4"
             />

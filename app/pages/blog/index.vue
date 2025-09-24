@@ -2,7 +2,7 @@
 const { t, locale } = useI18n()
 
 const { data: page } = await useAsyncData('blog-page', () => queryCollection(`pages_${locale.value}`)
-  .path('/blog')
+  .path(`/${locale.value}/blog`)
   .first()
 )
 
