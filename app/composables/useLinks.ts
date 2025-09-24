@@ -6,7 +6,7 @@ export const useLinks = () => {
   const navLinks = ref<NavigationMenuItem[]>([
     {
       label: t('index.title'),
-      icon: 'i-lucide:home',
+      icon: 'i-lucide:house',
       to: '/'
     },
     {

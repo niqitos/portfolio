@@ -51,7 +51,7 @@ if (!posts.value) {
           >
             <template #trailing>
               <UIcon
-                name="i-lucide-arrow-right"
+                name="i-lucide:arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
               />
             </template>

@@ -47,7 +47,7 @@ const startViewTransition = (event: MouseEvent) => {
   <ClientOnly>
     <UButton
       :aria-label="$t('theme.switch', { theme: nextTheme })"
-      :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
+      :icon="`i-lucide:${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
       variant="link"
       size="sm"
