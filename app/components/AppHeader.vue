@@ -23,6 +23,7 @@ const setLocale = (value: SupportedLocale) => {
       color="neutral"
       class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
       :ui="{
+        root: 'gap-0',
         link: 'px-2 py-1',
         linkLeadingIcon: 'hidden'
       }"
@@ -30,12 +31,16 @@ const setLocale = (value: SupportedLocale) => {
       <template #list-trailing>
         <ULocaleSelect
           v-model="locale"
-          variant="ghost"
+          variant="none"
           :locales="locales.map((l: LocaleObject) => ({
             name: l.name?.substring(0, 3),
             code: l.code,
             dir: l.dir
           })) as any[]"
+          :ui="{
+            base: 'text-muted hover:!text-default cursor-pointer',
+            trailingIcon: 'text-inherit'
+          }"
           @update:model-value="setLocale($event as SupportedLocale)"
         />
 
