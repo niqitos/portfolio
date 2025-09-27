@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
+    '@vite-pwa/nuxt',
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt'
@@ -182,6 +183,33 @@ export default defineNuxtConfig({
         'fa7-brands:github',
 
         'skill-icons:aws-dark'
+      ]
+    }
+  },
+
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Nniqitos',
+      short_name: 'Nniqitos',
+      start_url: '/',
+      display: 'standalone',
+      theme_color: '#ffffff',
+      background_color: '#ffffff',
+      lang: process.env.DEFAULT_LOCALE,
+      icons: [
+        {
+          src: '/web-app-manifest-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'maskable'
+        },
+        {
+          src: '/web-app-manifest-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable'
+        }
       ]
     }
   }

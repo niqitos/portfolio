@@ -17,6 +17,7 @@
     "@nuxt/ui": "^4.0.0",
     "@nuxtjs/i18n": "^10.1.0",
     "@nuxtjs/sitemap": "^7.4.7",
+    "@vite-pwa/nuxt": "^1.0.4",
     "@vueuse/nuxt": "^13.9.0",
     "better-sqlite3": "^12.4.1",
     "motion-v": "^1.7.1",
